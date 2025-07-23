@@ -1,61 +1,50 @@
-# Shadcn-UI Template Usage Instructions
+# ShopEase
 
-## technology stack
+## Overview
+This project is a React-based web application built with TypeScript, Vite, and Tailwind CSS. It features a modern UI with components for e-commerce functionality including product listings, user authentication, and profile management.
 
-This project is built with:
+## Features
+- Product catalog with detailed product pages
+- User authentication including login, registration, and password recovery
+- Shopping cart and checkout flow
+- Responsive design using Tailwind CSS and Radix UI components
+- State management with React Context and custom hooks
+- API integration for backend services (assumed)
 
-- Vite
+## Technologies Used
+- React 18
 - TypeScript
-- React
-- shadcn-ui
+- Vite
 - Tailwind CSS
+- Radix UI
+- React Router DOM
+- React Hook Form
+- ESLint and Prettier for code quality
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+## Project Structure
+- `src/components/` - Reusable UI components organized by feature
+- `src/pages/` - Page components for routing
+- `src/data/` - Static data such as product listings
+- `src/hooks/` - Custom React hooks
+- `src/contexts/` - React Context providers for global state
+- `src/lib/` - Utility functions and API clients
+- `public/` - Static assets like images and favicon
 
-## File Structure
+## Setup and Installation
+1. Clone the repository
+2. Install dependencies using `npm install` or `yarn install`
+3. Run the development server with `npm run dev`
+4. Open `http://localhost:3000` in your browser
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.js` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/app.tsx` - Root component of the project
-- `src/main.tsx` - Project entry point
-- `src/index.css` - Existing CSS configuration
+## Scripts
+- `dev` - Start development server
+- `build` - Build production assets
+- `preview` - Preview production build locally
+- `lint` - Run ESLint to check code quality
 
-## Components
+## Authentication
+- Login, registration, and password recovery forms are implemented.
+- Password recovery sends reset instructions via email (demo logs reset code to console).
 
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
-
-## Styling
-
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
-
-## Development
-
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
-
-## Note
-
-The `@/` path alias points to the `src/` directory
-
-# Commands
-
-**Install Dependencies**
-
-```shell
-pnpm i
-```
-
-**Start Preview**
-
-```shell
-pnpm run dev
-```
-
-**To build**
-
-```shell
-pnpm run build
-```
+## License
+Specify your project license here.
